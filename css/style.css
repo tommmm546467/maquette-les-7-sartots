@@ -449,3 +449,18 @@ form.formulaire{background:#fff;border-radius:18px;padding:clamp(24px,3.5vw,40px
   .note-heros{padding:7px 14px;font-size:13.5px;gap:8px}
   .menu-mini{grid-template-columns:1fr}
 }
+
+/* Réservation en ligne : bloc des pages et habillage du panneau OBT */
+.bloc-resa{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.bloc-resa .boutons,.entete-section .boutons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.entete-section .boutons{margin-top:0}
+.bloc-resa .petit{margin-top:18px}
+.etapes-resa{list-style:none;display:flex;flex-direction:column;gap:12px}
+.etapes-resa li{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--trait);border-radius:var(--r);padding:16px 20px}
+.etapes-resa .num{width:30px;height:30px;border-radius:50%;background:var(--lac);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem;flex:none}
+.etapes-resa svg{width:24px;height:24px;color:var(--lac);flex:none}
+.etapes-resa strong{display:block}
+.etapes-resa small{color:var(--doux);font-size:.88rem}
+.btn-contour-blanc svg{width:18px;height:18px}
+:root{--obt-accent:#1f6478;--obt-accent-text:#fff;--obt-bg:#fbfaf7;--obt-text:#1c2830;--obt-line:rgba(28,40,48,.14);--obt-radius:12px}
+@media (max-width:900px){.bloc-resa{grid-template-columns:1fr}}
